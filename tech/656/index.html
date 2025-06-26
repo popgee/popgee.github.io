@@ -1,0 +1,188 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>字节、比特率、波特率的区别 | Hexo-Mixker</title><meta name="author" content="popgeek"><meta name="copyright" content="popgeek"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="字节、比特率、波特率的区别最近在考软考网络工程师，对这些概念比较模糊，故在此整理并记录，方便新人学习。本文偏向于计算机领域，对于通信、无线电等领域可能不太适用，大家参考一下就好。 文章还没写完，先发布，等后面有时间了再更新。后台还有好多文章没更新。。。咕咕咕~~~ 比特1比特&#x3D;1bit&#x3D;1b（小写）&#x3D;1位 也就是说比特、bit、b、位这四个意思是一样的 字节1字节&amp;#">
+<meta property="og:type" content="website">
+<meta property="og:title" content="字节、比特率、波特率的区别">
+<meta property="og:url" content="https://www.mixker.com/tech/656/index.html">
+<meta property="og:site_name" content="Hexo-Mixker">
+<meta property="og:description" content="字节、比特率、波特率的区别最近在考软考网络工程师，对这些概念比较模糊，故在此整理并记录，方便新人学习。本文偏向于计算机领域，对于通信、无线电等领域可能不太适用，大家参考一下就好。 文章还没写完，先发布，等后面有时间了再更新。后台还有好多文章没更新。。。咕咕咕~~~ 比特1比特&#x3D;1bit&#x3D;1b（小写）&#x3D;1位 也就是说比特、bit、b、位这四个意思是一样的 字节1字节&amp;#">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.mixker.com/img/butterfly-icon.png">
+<meta property="article:published_time" content="2025-06-20T13:41:38.000Z">
+<meta property="article:modified_time" content="2025-06-21T04:09:46.166Z">
+<meta property="article:author" content="popgeek">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.mixker.com/img/butterfly-icon.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://www.mixker.com/tech/656/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '字节、比特率、波特率的区别',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'hello'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-image: url(/img/background-pic.jpg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Hexo-Mixker</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">字节、比特率、波特率的区别</h1></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id="字节、比特率、波特率的区别"><a href="#字节、比特率、波特率的区别" class="headerlink" title="字节、比特率、波特率的区别"></a>字节、比特率、波特率的区别</h1><p>最近在考软考网络工程师，对这些概念比较模糊，故在此整理并记录，方便新人学习。本文偏向于计算机领域，对于通信、无线电等领域可能不太适用，大家参考一下就好。</p>
+<p>文章还没写完，先发布，等后面有时间了再更新。后台还有好多文章没更新。。。咕咕咕~~~</p>
+<h2 id="比特"><a href="#比特" class="headerlink" title="比特"></a>比特</h2><p>1比特&#x3D;1bit&#x3D;1b（小写）&#x3D;1位</p>
+<p>也就是说比特、bit、b、位这四个意思是一样的</p>
+<h2 id="字节"><a href="#字节" class="headerlink" title="字节"></a>字节</h2><p>1字节&#x3D;1Byte&#x3D;1B（大写）&#x3D;8bit（在计算机中一般来说等于8bit）</p>
+<h2 id="容量单位"><a href="#容量单位" class="headerlink" title="容量单位"></a>容量单位</h2><p>在计算机中系统计算文件大小、系统中计算硬盘容量、内存这些领域，换算是1K&#x3D;1024，这是为了方便寻址。</p>
+<p>1字节&#x3D;1Byte&#x3D;1B&#x3D;8bit<br>1KB&#x3D;1024B<br>1MB&#x3D;1024KB<br>1GB&#x3D;1024MB</p>
+<h2 id="比特率"><a href="#比特率" class="headerlink" title="比特率"></a>比特率</h2><p>一秒钟传输10个比特，比特率就是10bit&#x2F;s&#x3D;10b&#x2F;s&#x3D;10bps(bit per second)</p>
+<p>在网速、速率、传输速度等领域，换算是1K&#x3D;1000，是为了方便计算。<br>1Kb&#x2F;s&#x3D;1000bit&#x2F;s<br>1Mb&#x2F;s&#x3D;1000Kb&#x2F;s<br>1Gb&#x2F;s&#x3D;1000Mb&#x2F;s</p>
+<p>举例：无论信号波形怎么跳动的，只要是1秒传送2个bit，则比特率为2bit&#x2F;s</p>
+<h2 id="码元"><a href="#码元" class="headerlink" title="码元"></a>码元</h2><p>信号脉冲一下，就是一个码元。码元速率就是一秒钟内传输了多少个码元。</p>
+<p>一个码元内可能包含一个或多个bit，这是根据信号编码来定义的，比如频率、振幅、相位等。</p>
+<p>比如在计算机中，高电平代表1，低电平代表0，那每一次信号脉冲都是一个码元。</p>
+<p><img src="https://www.mixker.com/wp-content/uploads/2023/06/image.png" alt="比特、位、字节、比特率、波特率的区别"></p>
+<p>在别的领域中，一个码元可能包含多个比特。比如有一个信号，信号有高、中、低、零四种状态，现在定义高信号代表11，中信号代表10，低信号代表01，零信号代表00，那么此时一个码元就包含2个比特。</p>
+<p>（此处放图片，画了高中低零四种状态和比特。）</p>
+<h2 id="波特率"><a href="#波特率" class="headerlink" title="波特率"></a>波特率</h2><p>一秒钟传输10个码元，波特率就是10bps&#x3D;10b&#x2F;s（Baud per second）（注意！这里说的是波特率，不是比特率。）（波特率的单位网上有多种说法，这里写的可能不准确）</p>
+<p>根据信号调制，一个码元中可能包含多个比特，所以在非计算机二进制领域中，大多数情况波特率不等于比特率。</p>
+<p>在计算机领域中，信号只有高电平和低电平，也就是1和0；因此一个码元只包含一个比特，所以计算机领域中波特率等于比特率。</p>
+<h2 id="比特率和波特率的关系"><a href="#比特率和波特率的关系" class="headerlink" title="比特率和波特率的关系"></a>比特率和波特率的关系</h2><p>计算机中为二进制，信号只有高电平和低电平，也就是1和0；一个码元中只有一个比特，所以计算机中比特率&#x3D;波特率<br>所以在计算机二进制中，1秒传输10个bit，波特率就是10bit&#x2F;s&#x3D;10b&#x2F;s&#x3D;10bps</p>
+<p><img src="/../imgs/World/image.png" alt="比特、位、字节、比特率、波特率的区别"></p>
+<p>在通信、无线电等其他领域，用的不一定是二进制，所以大多数情况波特率不等于比特率。</p>
+<p>比如上图例2中，信号波动会有多个不同的电压，也就是说信号波动一次，传输了不止一个bit。（在这里画图，包含一个bit的波动，2给bit的波动），假如一秒跳动3次，跳动一次传输2bit，那波特率就是3bit&#x2F;s，比特率就是6bit&#x2F;s。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://www.mixker.com">popgeek</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://www.mixker.com/tech/656/">https://www.mixker.com/tech/656/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://www.mixker.com" target="_blank">Hexo-Mixker</a>！</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="/img/butterfly-icon.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav id="pagination"><div class="pagination"></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">popgeek</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/tech/656/" title="字节、比特率、波特率的区别">字节、比特率、波特率的区别</a><time datetime="2025-06-20T13:41:38.000Z" title="发表于 2025-06-20 21:41:38">2025-06-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/06/20/hello-world/" title="Hello World">Hello World</a><time datetime="2025-06-20T13:18:31.219Z" title="发表于 2025-06-20 21:18:31">2025-06-20</time></div></div></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/06/">
+            <span class="card-archive-list-date">
+              六月 2025
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">2</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-06-26T08:35:54.357Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background: transparent;"><div id="footer-wrap"><div class="copyright">&copy;2016 - 2025 By popgeek</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.3.5</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
