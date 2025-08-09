@@ -1,10 +1,10 @@
 https://www.mixker.com/tech/920/
-https://www.mixker.com/tech/921/
-https://www.mixker.com/tech/923/
 https://www.mixker.com/tech/922/
 https://www.mixker.com/tech/924/
-https://www.mixker.com/tech/926/
+https://www.mixker.com/tech/921/
+https://www.mixker.com/tech/923/
 https://www.mixker.com/tech/925/
+https://www.mixker.com/tech/926/
 https://www.mixker.com/tech/927/
 https://www.mixker.com/tech/928/
 https://www.mixker.com/tech/929/
@@ -39,8 +39,8 @@ https://www.mixker.com/tech/linux/256/
 https://www.mixker.com/tech/249/
 https://www.mixker.com/imaginative/trick/262/
 https://www.mixker.com/tech/linux/224/
-https://www.mixker.com/tech/linux/219/
 https://www.mixker.com/tech/215/
+https://www.mixker.com/tech/linux/219/
 https://www.mixker.com/tech/linux/146/
 https://www.mixker.com/tech/linux/254/
 https://www.mixker.com/tech/linux/138/
