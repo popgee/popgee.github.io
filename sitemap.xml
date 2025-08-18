@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.mixker.com/tech/546/</loc>
+    
+    <lastmod>2025-08-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.mixker.com/tech/rare/511/</loc>
+    
+    <lastmod>2025-08-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.mixker.com/tech/920/</loc>
     
     <lastmod>2025-08-09</lastmod>
@@ -12,15 +30,6 @@
   
   <url>
     <loc>https://www.mixker.com/tech/921/</loc>
-    
-    <lastmod>2025-08-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.mixker.com/tech/924/</loc>
     
     <lastmod>2025-08-09</lastmod>
     
@@ -56,6 +65,24 @@
   </url>
   
   <url>
+    <loc>https://www.mixker.com/tech/926/</loc>
+    
+    <lastmod>2025-08-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.mixker.com/tech/924/</loc>
+    
+    <lastmod>2025-08-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.mixker.com/tech/927/</loc>
     
     <lastmod>2025-08-09</lastmod>
@@ -66,15 +93,6 @@
   
   <url>
     <loc>https://www.mixker.com/tech/928/</loc>
-    
-    <lastmod>2025-08-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.mixker.com/tech/926/</loc>
     
     <lastmod>2025-08-09</lastmod>
     
@@ -101,16 +119,7 @@
   </url>
   
   <url>
-    <loc>https://www.mixker.com/tech/53/</loc>
-    
-    <lastmod>2025-06-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.mixker.com/tech/923/</loc>
+    <loc>https://www.mixker.com/tech/919/</loc>
     
     <lastmod>2025-05-28</lastmod>
     
@@ -119,7 +128,7 @@
   </url>
   
   <url>
-    <loc>https://www.mixker.com/tech/919/</loc>
+    <loc>https://www.mixker.com/tech/923/</loc>
     
     <lastmod>2025-05-28</lastmod>
     
@@ -173,27 +182,9 @@
   </url>
   
   <url>
-    <loc>https://www.mixker.com/tech/546/</loc>
-    
-    <lastmod>2023-09-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.mixker.com/tech/656/</loc>
     
     <lastmod>2023-06-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.mixker.com/tech/rare/511/</loc>
-    
-    <lastmod>2023-01-05</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -254,7 +245,7 @@
   </url>
   
   <url>
-    <loc>https://www.mixker.com/tech/241/</loc>
+    <loc>https://www.mixker.com/tech/hack/353/</loc>
     
     <lastmod>2021-12-28</lastmod>
     
@@ -263,7 +254,7 @@
   </url>
   
   <url>
-    <loc>https://www.mixker.com/tech/hack/353/</loc>
+    <loc>https://www.mixker.com/tech/241/</loc>
     
     <lastmod>2021-12-28</lastmod>
     
@@ -371,7 +362,7 @@
   </url>
   
   <url>
-    <loc>https://www.mixker.com/tech/215/</loc>
+    <loc>https://www.mixker.com/tech/linux/219/</loc>
     
     <lastmod>2021-08-28</lastmod>
     
@@ -380,7 +371,7 @@
   </url>
   
   <url>
-    <loc>https://www.mixker.com/tech/linux/219/</loc>
+    <loc>https://www.mixker.com/tech/215/</loc>
     
     <lastmod>2021-08-28</lastmod>
     
@@ -469,10 +460,19 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://www.mixker.com/tech/53/</loc>
+    
+    <lastmod>2021-06-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   <url>
     <loc>https://www.mixker.com/</loc>
-    <lastmod>2025-08-09</lastmod>
+    <lastmod>2025-08-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
